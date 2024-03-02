@@ -277,6 +277,7 @@ footer {
   }
   .nav-item-container {
     justify-content: center;
+    align-items: center;
     margin-top: 10px;
     width: 100%;
     padding: 0 5px;
