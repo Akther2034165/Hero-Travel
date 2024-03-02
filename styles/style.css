@@ -241,6 +241,31 @@ footer {
   text-align: center;
   transform: translate(-10px, -40px) rotate(-20deg);
 }
+/* footer  */
+.footer-container {
+  background-color: #f3f3f3;
+}
+.footer-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  height: 300px;
+}
+.footer-icon-container a {
+  text-decoration: none;
+  margin-right: 10px;
+}
+.footer-icon-container a .fa-brands {
+  font-size: 30px;
+  color: black;
+}
 @media screen and (max-width: 676px) {
   nav {
     flex-direction: column;
@@ -308,5 +333,8 @@ footer {
   .subscribe-container,
   .newsletter-img-container {
     width: 100%;
+  }
+  .footer-container {
+    margin-top: 400px;
   }
 }
