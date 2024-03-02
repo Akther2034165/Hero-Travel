@@ -1,0 +1,59 @@
+:root {
+  --primaryColor: #ff5400;
+  --secondaryColor: #424247;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Mulish", sans-serif;
+}
+.highlight {
+  color: var(--primaryColor);
+}
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+  padding: 15px 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  width: 48%;
+}
+.nav-container img {
+  width: 50px;
+}
+.brand-title {
+  margin-left: 15px;
+}
+.nav-item-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 48%;
+}
+.nav-item-container a {
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 676px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-item-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
