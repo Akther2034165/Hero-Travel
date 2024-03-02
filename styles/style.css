@@ -274,7 +274,7 @@ footer {
   .nav-item-container {
     /* flex-direction: column; */
     justify-content: center;
-    gap: 10px;
+    gap: 3px;
     margin-top: 10px;
   }
   .popular-tour-container,
