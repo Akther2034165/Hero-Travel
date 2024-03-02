@@ -135,9 +135,41 @@ nav {
   grid-row: 3 / span 1;
 }
 /* choose destination  */
-.destination-text-container {
+.destination-text-container,
+.wcu-text-container {
   text-align: center;
   margin: 20px;
+}
+/* wcu container  */
+.wcu-card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  padding: 10px;
+}
+.wcu-card-container > div {
+  flex-basis: 48%;
+  border-radius: 10px;
+}
+.wcu-card-container > div img {
+  width: 50px;
+  height: 50px;
+}
+.card-1 {
+  background: #fdf6ed;
+  padding: 30px;
+}
+.card-2 {
+  background: #f1f8fa;
+  padding: 30px;
+}
+.card-3 {
+  background: #fff4f4;
+  padding: 30px;
+}
+.wcu-card-container h3 {
+  margin: 10px 0;
 }
 @media screen and (max-width: 676px) {
   nav {
@@ -191,5 +223,9 @@ nav {
   .grid-item-7 {
     grid-column: 1 / span 1;
     grid-row: 7 / span 1;
+  }
+  .wcu-card-container {
+    flex-direction: column;
+    gap: 20px;
   }
 }
