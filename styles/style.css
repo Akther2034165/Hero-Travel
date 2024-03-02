@@ -271,11 +271,15 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+  .nav-container {
+    width: 100%;
+    justify-content: center;
+  }
   .nav-item-container {
-    /* flex-direction: column; */
     justify-content: center;
     gap: 3px;
     margin-top: 10px;
+    width: 100%;
   }
   .popular-tour-container,
   .perfect-place-container {
