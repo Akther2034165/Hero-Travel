@@ -279,6 +279,7 @@ footer {
     justify-content: center;
     margin-top: 10px;
     width: 100%;
+    padding: 0 5px;
   }
   .popular-tour-container,
   .perfect-place-container {
