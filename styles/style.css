@@ -101,8 +101,10 @@ nav {
 
 .banner-input {
   display: flex;
+  flex-wrap: wrap;
   padding: 16px;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   gap: 24px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.3);
@@ -374,7 +376,7 @@ footer {
   font-size: 30px;
   color: black;
 }
-@media screen and (max-width: 676px) {
+@media screen and (max-width: 600px) {
   nav {
     flex-direction: row;
     padding: 10px;
