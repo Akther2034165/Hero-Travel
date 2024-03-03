@@ -59,6 +59,71 @@ nav {
   margin-right: 20px;
   color: var(--secondaryColor);
 }
+.hamburger {
+  display: none;
+}
+/* banner  */
+
+.banner-container {
+  width: 100%;
+  height: 700px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url(../Images/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  margin-top: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-title {
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+.banner-desc {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 70px;
+  width: 70%;
+}
+
+.banner-input {
+  display: flex;
+  padding: 16px;
+  align-items: flex-start;
+  gap: 24px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.banner-input > input,
+select,
+.find-btn {
+  width: 174px;
+  height: 60px;
+  font-size: 20px;
+  padding: 15px;
+  color: rgba(19, 19, 24, 0.5);
+  border-radius: 8px;
+  border: none;
+}
+
+.banner-input > button {
+  background: var(--primaryColor);
+  color: white;
+}
 
 /* tour section */
 section,
@@ -110,51 +175,75 @@ footer {
   padding: 10px;
   gap: 20px;
 }
-
-.destination-img-container img {
-  width: 100%;
-  height: 100%;
+.destination-title {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
 }
 .grid-item-1 {
   grid-column: 1 / span 6;
   grid-row: 1 / span 1;
+  padding: 10px;
+  height: 300px;
+  border-radius: 10px;
 }
 .grid-item-2 {
   grid-column: 7 / span 6;
   grid-row: 1 / span 1;
+  padding: 10px;
+  height: 300px;
+  border-radius: 10px;
 }
 .grid-item-3 {
   grid-column: 1 / span 4;
   grid-row: 2 / span 1;
+  padding: 10px;
+  height: 300px;
+  border-radius: 10px;
 }
 .grid-item-4 {
   grid-column: 5 / span 5;
   grid-row: 2 / span 1;
+  padding: 10px;
+  height: 300px;
+  border-radius: 10px;
 }
 .grid-item-5 {
   grid-column: 10 / span 3;
   grid-row: 2 / span 1;
+  padding: 10px;
+  height: 300px;
+  border-radius: 10px;
 }
 .grid-item-6 {
   grid-column: 1 / span 5;
   grid-row: 3 / span 1;
+  padding: 10px;
+  height: 300px;
+  border-radius: 10px;
 }
 .grid-item-7 {
   grid-column: 6 / span 7;
   grid-row: 3 / span 1;
+  padding: 10px;
+  height: 300px;
+  border-radius: 10px;
 }
 /* choose destination  */
 .destination-text-container,
-.wcu-text-container {
+.wcu-text-container,
+.package-text-container {
   text-align: center;
   margin: 20px;
 }
 /* wcu container  */
 .wcu-card-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  row-gap: 20px;
+  gap: 20px;
   padding: 10px;
 }
 .wcu-card-container > div {
@@ -181,7 +270,26 @@ footer {
 .wcu-card-container h3 {
   margin: 10px 0;
 }
-
+/* package  */
+.package-card-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.card {
+  width: 32%;
+}
+.card img {
+  width: 100%;
+  height: 300px;
+}
+.package-card-container .card {
+  background-color: white;
+  border: 1px solid var(--primaryColor);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
 /* perfect place  */
 .pf-list {
   padding-left: 30px;
@@ -268,19 +376,30 @@ footer {
 }
 @media screen and (max-width: 676px) {
   nav {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
     padding: 10px;
   }
   .nav-container {
-    width: 100%;
-    justify-content: center;
+    width: 50%;
+    flex-direction: row;
   }
   .nav-item-container {
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    width: 100%;
+    display: none;
+    width: 50%;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger .fa-bars {
+    font-size: 25px;
+    color: var(--primaryColor);
+  }
+  .banner-section-form {
+    flex-direction: column;
+  }
+  .banner-title {
+    font-size: 40px;
   }
   .popular-tour-container,
   .perfect-place-container {
@@ -326,6 +445,13 @@ footer {
   .grid-item-7 {
     grid-column: 1 / span 1;
     grid-row: 7 / span 1;
+  }
+  .package-card-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .card {
+    width: 100%;
   }
   .wcu-card-container {
     flex-direction: column;
